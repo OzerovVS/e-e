@@ -13,3 +13,5 @@ C:\Users\user\source\repos\trts\trts\obj\Debug\net6.0\refint\trts.dll
 C:\Users\user\source\repos\trts\trts\obj\Debug\net6.0\trts.pdb
 C:\Users\user\source\repos\trts\trts\obj\Debug\net6.0\trts.genruntimeconfig.cache
 C:\Users\user\source\repos\trts\trts\obj\Debug\net6.0\ref\trts.dll
+C:\Users\user\source\repos\trts\trts\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\user\source\repos\trts\trts\obj\Debug\net6.0\trts.csproj.CopyComplete

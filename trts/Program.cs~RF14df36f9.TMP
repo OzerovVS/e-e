@@ -1,11 +1,12 @@
 ﻿using Newtonsoft.Json;
 using trts;
+l.pris();
 Console.WriteLine("Введите путь до файла");
-string sslka = Console.ReadLine();
+string sslka = Convert.ToString(Console.ReadLine());
 string text = File.ReadAllText(sslka);
 List<figurs> result = JsonConvert.DeserializeObject<List<figurs>>(text);
-l.prsv();
-l.pris();
+Console.WriteLine(result[0]);
+/*
 rbst();
 string a = "";
 string b = "";
@@ -28,10 +29,10 @@ for (int i = 0; i < l.a3.Count; i++)
     d += l.a3[i];
 }
 figurs com1 = new figurs();
-figurs.figura1 = a;
-figurs.figura2 = b;
-figurs.figura3 = c;
-figurs.figura4 = d;
+com1.figura1 = a;
+com1.figura2 = b;
+com1.figura3 = c;
+com1.figura4 = d;
 List<figurs> figurr = new List<figurs> { };
 figurr.Add(com1);
 string json = JsonConvert.SerializeObject(figurr);
@@ -207,4 +208,4 @@ static void rbst()
         }
     } while (aa.Key != ConsoleKey.Enter);
 }
-
+*/

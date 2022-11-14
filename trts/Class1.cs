@@ -13,10 +13,10 @@ namespace trts
         public static List<char> a1;
         public static List<char> a2;
         public static List<char> a3;
-        static string b = "Прямоугольник";
-        static string c = "Треугольник";
-        static string d = "Четырехугольник";
-        static string f = "Круг";
+        public static string b;
+        public static string c;
+        public static string d;
+        public static string f;
         private static List<char> tt(string b)
         {
             char[] bb = b.ToCharArray();
@@ -36,7 +36,6 @@ namespace trts
         }
         public static void t2()
         {
-            Console.WriteLine($"Отредактируйте текст, если хотите или нажмите Enter, а затем выберите во что хотите перевести");
             Console.SetCursorPosition(0, 0);
             for (int i = 0; i < a0.Count; i++)
             {
@@ -126,12 +125,20 @@ namespace trts
         {
             a3 = a;
         }
+        public static void prsv()
+        {
+            b = figurs.figura1;
+            c = figurs.figura2;
+            d = figurs.figura3;
+            f = figurs.figura4;
+        }
     }
     internal class figurs
     {
-        string figura1;
-        string figura2;
-        string figura3;
-        string figura4;
+        static public string figura1;
+        static public string figura2;
+        static public string figura3;
+        static public string figura4;
     }
 }
+
