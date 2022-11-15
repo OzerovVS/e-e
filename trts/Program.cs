@@ -1,210 +1,242 @@
-﻿using Newtonsoft.Json;
+﻿//using Newtonsoft.Json;
+//using trts;
+//Console.WriteLine("Введите путь до файла");
+//string sslka = Console.ReadLine();
+//string text = File.ReadAllText(sslka);
+//if (text.Contains("json"))
+//{
+//    List<figurs> result = JsonConvert.DeserializeObject<List<figurs>>(text);
+
+//}
+//if (text.Contains("txt"))
+//{
+//    aaa(sslka);
+//    l name = new l();
+//    figurs apchi = aaa(sslka);
+//    name.prsv();
+//    name.pris();
+//}
+//rbst();
+//string a = "";
+//string b = "";
+//string c = "";
+//string d = "";
+//for (int i = 0; i < l.a0.Count; i++)
+//{
+//    a += l.a0[i];
+//}
+//for (int i = 0; i < l.a1.Count; i++)
+//{
+//    b += l.a1[i];
+//}
+//for (int i = 0; i < l.a2.Count; i++)
+//{
+//    c += l.a2[i];
+//}
+//for (int i = 0; i < l.a3.Count; i++)
+//{
+//    d += l.a3[i];
+//}
+//figurs com1 = new figurs();
+//com1.figura1 = a;
+//com1.figura2 = b;
+//com1.figura3 = c;
+//com1.figura4 = d;
+//List<figurs> figurr = new List<figurs> { };
+//figurr.Add(com1);
+//string json = JsonConvert.SerializeObject(figurr);
+//File.WriteAllText("C:\\Users\\user\\Desktop\\Result.json", json);
+//static void rbst()
+//{
+
+//    int pos = 1;
+//    char g;
+//    ConsoleKeyInfo aa;
+//    do
+//    {
+//        aa = Console.ReadKey();
+//        Console.SetCursorPosition(0, pos);
+//        switch (pos)
+//        {
+//            case 0:
+//                Console.Clear();
+//                l.t2();
+//                do
+//                {
+//                    Console.SetCursorPosition(0, pos);
+//                    aa = Console.ReadKey();
+//                    if (aa.Key == ConsoleKey.Backspace)
+//                    {
+//                        l.a0 = l.a0.SkipLast(1).ToList();
+//                    }
+//                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
+//                    {
+//                        g = aa.KeyChar;
+//                        l.a0.Add(g);
+//                    }
+
+//                    if (aa.Key == ConsoleKey.UpArrow)
+//                    {
+//                        pos--;
+//                        if (pos < 0)
+//                        {
+//                            pos++;
+//                        }
+//                        break;
+//                    }
+//                    if (aa.Key == ConsoleKey.DownArrow)
+//                    {
+//                        pos++;
+//                        if (pos > 3)
+//                        {
+//                            pos--;
+//                        }
+//                        break;
+//                    }
+//                    Console.Clear();
+//                    l.t2();
+//                } while (true);
+//                break;
+//            case 1:
+//                Console.Clear();
+//                l.t2();
+//                do
+//                {
+//                    Console.SetCursorPosition(0, pos);
+//                    aa = Console.ReadKey();
+//                    if (aa.Key == ConsoleKey.Backspace)
+//                    {
+//                        l.a1 = l.a1.SkipLast(1).ToList();
+//                    }
+//                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
+//                    {
+//                        g = aa.KeyChar;
+//                        l.a1.Add(g);
+//                    }
+
+//                    if (aa.Key == ConsoleKey.UpArrow)
+//                    {
+//                        pos--;
+//                        if (pos < 0)
+//                        {
+//                            pos++;
+//                        }
+//                        break;
+//                    }
+//                    if (aa.Key == ConsoleKey.DownArrow)
+//                    {
+//                        pos++;
+//                        if (pos > 3)
+//                        {
+//                            pos--;
+//                        }
+//                        break;
+//                    }
+//                    Console.Clear();
+//                    l.t2();
+//                } while (true);
+//                break;
+//            case 2:
+//                Console.Clear();
+//                l.t2();
+//                do
+//                {
+//                    Console.SetCursorPosition(0, pos);
+//                    aa = Console.ReadKey();
+//                    if (aa.Key == ConsoleKey.Backspace)
+//                    {
+//                        l.a2 = l.a2.SkipLast(1).ToList();
+//                    }
+//                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
+//                    {
+//                        g = aa.KeyChar;
+//                        l.a2.Add(g);
+//                    }
+
+//                    if (aa.Key == ConsoleKey.UpArrow)
+//                    {
+//                        pos--;
+//                        if (pos < 0)
+//                        {
+//                            pos++;
+//                        }
+//                        break;
+//                    }
+//                    if (aa.Key == ConsoleKey.DownArrow)
+//                    {
+//                        pos++;
+//                        if (pos > 3)
+//                        {
+//                            pos--;
+//                        }
+//                        break;
+//                    }
+//                    Console.Clear();
+//                    l.t2();
+//                } while (true);
+//                break;
+//            case 3:
+//                Console.Clear();
+//                l.t2();
+//                do
+//                {
+//                    Console.SetCursorPosition(0, pos);
+//                    aa = Console.ReadKey();
+//                    if (aa.Key == ConsoleKey.Backspace)
+//                    {
+//                        l.a3 = l.a3.SkipLast(1).ToList();
+//                    }
+//                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
+//                    {
+//                        g = aa.KeyChar;
+//                        l.a3.Add(g);
+//                    }
+
+//                    if (aa.Key == ConsoleKey.UpArrow)
+//                    {
+//                        pos--;
+//                        if (pos < 1)
+//                        {
+//                            pos++;
+//                        }
+//                        break;
+//                    }
+//                    if (aa.Key == ConsoleKey.DownArrow)
+//                    {
+//                        pos++;
+//                        if (pos > 4)
+//                        {
+//                            pos--;
+//                        }
+//                        break;
+//                    }
+//                    Console.Clear();
+//                    l.t2();
+//                } while (true);
+//                break;
+//        }
+//    } while (aa.Key != ConsoleKey.Enter);
+//}
+//static List<figurs> aaa(string sslka)
+//{
+//    List<figurs> result = new List<figurs>();
+//    string[] sroki = File.ReadAllLines(sslka);
+//    for (int i = 0; i < sroki.Length; i += 4)
+//    {
+//        figurs f = new figurs();
+//        f.figura1 = sroki[i];
+//        f.figura2 = sroki[i + 1];
+//        f.figura3 = sroki[i + 2];
+//        f.figura4 = sroki[i + 3];
+
+//        result.Add(f);
+//    }
+//    return result;
+//}
 using trts;
-Console.WriteLine("Введите путь до файла");
-string sslka = Console.ReadLine();
-string text = File.ReadAllText(sslka);
-List<figurs> result = JsonConvert.DeserializeObject<List<figurs>>(text);
-l.prsv();
-l.pris();
-rbst();
-string a = "";
-string b = "";
-string c = "";
-string d = "";
-for (int i = 0; i < l.a0.Count; i++)
+using Newtonsoft;
+do
 {
-    a += l.a0[i];
-}
-for (int i = 0; i < l.a1.Count; i++)
-{
-    b += l.a1[i];
-}
-for (int i = 0; i < l.a2.Count; i++)
-{
-    c += l.a2[i];
-}
-for (int i = 0; i < l.a3.Count; i++)
-{
-    d += l.a3[i];
-}
-figurs com1 = new figurs();
-figurs.figura1 = a;
-figurs.figura2 = b;
-figurs.figura3 = c;
-figurs.figura4 = d;
-List<figurs> figurr = new List<figurs> { };
-figurr.Add(com1);
-string json = JsonConvert.SerializeObject(figurr);
-File.WriteAllText("C:\\Users\\user\\Desktop\\Result.json", json);
-static void rbst()
-{
-
-    int pos = 1;
-    char g;
-    ConsoleKeyInfo aa;
-    do
-    {
-        aa = Console.ReadKey();
-        Console.SetCursorPosition(0, pos);
-        switch (pos)
-        {
-            case 0:
-                Console.Clear();
-                l.t2();
-                do
-                {
-                    Console.SetCursorPosition(0, pos);
-                    aa = Console.ReadKey();
-                    if (aa.Key == ConsoleKey.Backspace)
-                    {
-                        l.a0 = l.a0.SkipLast(1).ToList();
-                    }
-                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
-                    {
-                        g = aa.KeyChar;
-                        l.a0.Add(g);
-                    }
-
-                    if (aa.Key == ConsoleKey.UpArrow)
-                    {
-                        pos--;
-                        if (pos < 0)
-                        {
-                            pos++;
-                        }
-                        break;
-                    }
-                    if (aa.Key == ConsoleKey.DownArrow)
-                    {
-                        pos++;
-                        if (pos > 3)
-                        {
-                            pos--;
-                        }
-                        break;
-                    }
-                    Console.Clear();
-                    l.t2();
-                } while (true);
-                break;
-            case 1:
-                Console.Clear();
-                l.t2();
-                do
-                {
-                    Console.SetCursorPosition(0, pos);
-                    aa = Console.ReadKey();
-                    if (aa.Key == ConsoleKey.Backspace)
-                    {
-                        l.a1 = l.a1.SkipLast(1).ToList();
-                    }
-                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
-                    {
-                        g = aa.KeyChar;
-                        l.a1.Add(g);
-                    }
-
-                    if (aa.Key == ConsoleKey.UpArrow)
-                    {
-                        pos--;
-                        if (pos < 0)
-                        {
-                            pos++;
-                        }
-                        break;
-                    }
-                    if (aa.Key == ConsoleKey.DownArrow)
-                    {
-                        pos++;
-                        if (pos > 3)
-                        {
-                            pos--;
-                        }
-                        break;
-                    }
-                    Console.Clear();
-                    l.t2();
-                } while (true);
-                break;
-            case 2:
-                Console.Clear();
-                l.t2();
-                do
-                {
-                    Console.SetCursorPosition(0, pos);
-                    aa = Console.ReadKey();
-                    if (aa.Key == ConsoleKey.Backspace)
-                    {
-                        l.a2 = l.a2.SkipLast(1).ToList();
-                    }
-                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
-                    {
-                        g = aa.KeyChar;
-                        l.a2.Add(g);
-                    }
-
-                    if (aa.Key == ConsoleKey.UpArrow)
-                    {
-                        pos--;
-                        if (pos < 0)
-                        {
-                            pos++;
-                        }
-                        break;
-                    }
-                    if (aa.Key == ConsoleKey.DownArrow)
-                    {
-                        pos++;
-                        if (pos > 3)
-                        {
-                            pos--;
-                        }
-                        break;
-                    }
-                    Console.Clear();
-                    l.t2();
-                } while (true);
-                break;
-            case 3:
-                Console.Clear();
-                l.t2();
-                do
-                {
-                    Console.SetCursorPosition(0, pos);
-                    aa = Console.ReadKey();
-                    if (aa.Key == ConsoleKey.Backspace)
-                    {
-                        l.a3 = l.a3.SkipLast(1).ToList();
-                    }
-                    if (aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.J || aa.Key == ConsoleKey.H || aa.Key == ConsoleKey.G || aa.Key == ConsoleKey.F || aa.Key == ConsoleKey.D || aa.Key == ConsoleKey.S || aa.Key == ConsoleKey.A || aa.Key == ConsoleKey.Q || aa.Key == ConsoleKey.W || aa.Key == ConsoleKey.E || aa.Key == ConsoleKey.R || aa.Key == ConsoleKey.T || aa.Key == ConsoleKey.Y || aa.Key == ConsoleKey.U || aa.Key == ConsoleKey.I || aa.Key == ConsoleKey.O || aa.Key == ConsoleKey.P || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Z || aa.Key == ConsoleKey.L || aa.Key == ConsoleKey.X || aa.Key == ConsoleKey.C || aa.Key == ConsoleKey.B || aa.Key == ConsoleKey.V || aa.Key == ConsoleKey.N || aa.Key == ConsoleKey.M || aa.Key == ConsoleKey.K || aa.Key == ConsoleKey.Oem4 || aa.Key == ConsoleKey.Oem6 || aa.Key == ConsoleKey.Oem5 || aa.Key == ConsoleKey.Oem7 || aa.Key == ConsoleKey.OemPeriod || aa.Key == ConsoleKey.OemComma || aa.Key == ConsoleKey.D0 || aa.Key == ConsoleKey.D1 || aa.Key == ConsoleKey.D2 || aa.Key == ConsoleKey.D3 || aa.Key == ConsoleKey.D4 || aa.Key == ConsoleKey.D5 || aa.Key == ConsoleKey.D6 || aa.Key == ConsoleKey.D7 || aa.Key == ConsoleKey.D8 || aa.Key == ConsoleKey.D9 || aa.Key == ConsoleKey.Oem3 || aa.Key == ConsoleKey.Oem1)
-                    {
-                        g = aa.KeyChar;
-                        l.a3.Add(g);
-                    }
-
-                    if (aa.Key == ConsoleKey.UpArrow)
-                    {
-                        pos--;
-                        if (pos < 1)
-                        {
-                            pos++;
-                        }
-                        break;
-                    }
-                    if (aa.Key == ConsoleKey.DownArrow)
-                    {
-                        pos++;
-                        if (pos > 4)
-                        {
-                            pos--;
-                        }
-                        break;
-                    }
-                    Console.Clear();
-                    l.t2();
-                } while (true);
-                break;
-        }
-    } while (aa.Key != ConsoleKey.Enter);
-}
-
+    Console.WriteLine("Введите путь до файла");
+    osn.deserializaciya(Console.ReadLine());
+} while (true);
